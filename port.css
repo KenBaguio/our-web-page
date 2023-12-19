@@ -1,0 +1,377 @@
+html,body {
+    
+    font-family:  Impact ;
+    color: black;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background-color: #023047;
+    height: 100vh;
+    width: 100%;
+}
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(2, 48, 71, 0.8);
+    overflow: hidden;
+    z-index: 1000;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.group-name img {
+    width: 100px;
+    height: auto;
+}
+
+.mobile-menu-button {
+    display: none;
+}
+
+nav a {
+    
+    display: block;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px 40px;
+    font-family: Trebuchet ;
+    text-decoration: none;
+}
+
+nav a {
+    float: right;
+    position: relative;
+}
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 50px;
+}
+
+@media (max-width: 620px) {
+    .group-name,
+    nav a {
+        float: none;
+        width: 100%;
+        align-items: center;
+    }
+}
+
+section {
+    margin-top: 100px;
+    padding: 20px;
+    text-align: center;
+}
+
+.welcome{
+    font-size: 80px;
+    color: black;
+    text-align:center;
+    
+   
+}
+.home{
+    background-image: url(./image/bgh.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.containerhome{
+   color: black;
+   font-size: 40px;
+   text-align: center ;
+  
+
+}
+
+
+.container {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+}
+
+.container img {
+    border: solid 2px #023047;
+    border-radius: 10px;
+    max-width: 100%;
+    height: 150px;
+   
+}
+.container:hover {
+    transform: scale(1.1); 
+    transition: transform 0.5s ease; 
+    cursor: pointer;
+    
+}
+.info {
+    background-color: #054869;
+    margin-top: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    border: double 1px black;
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+@media screen and(max-width: 400px){
+    .container img {
+        border: solid 2px #023047;
+        border-radius: 10px;
+    }
+ .info{
+    background-color:#054869;
+    margin-top: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    border: double 1px black;
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+ }   
+}
+.page{
+    font-size: 50px;
+
+    padding-top: 30px;
+}
+
+.activity-container {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+    font-family: Georgia;
+}
+
+.activity-image {
+    border: solid 2px #050505;
+    max-width: 100%;
+    height: auto;
+}
+
+.activity-name {
+    margin-top: 5px;
+    font-weight: bold;
+}
+.actinfo{
+    background-color:#054869;
+    margin-top: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    border: double 1px black;
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+
+}
+.activity-container:hover{
+        transform: scale(1.1);
+        transition: transform 0.3s ease; 
+        cursor: pointer;
+}
+@media (max-width: 400px) {
+   .page{
+    margin-top: 700px;
+   }
+    .activity-image {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .activity-name {
+        font-size: 16px; 
+    }
+    .activity-container{
+        background-color:#054869;
+        margin-top: 200px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+        border: double 1px black;
+        border-radius: 20px;
+        padding: 10px;
+        color: white;
+    
+    }
+    
+}
+
+#home,
+#about,
+#member,
+#app{
+height: 100vh;
+width: 100%;
+
+}
+
+.about {
+    background-image: url(./image/bga.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.par {
+    background-color: white;
+    color: #000000;
+    border: 1px solid rgb(138, 131, 131);
+    font-family: cursive;
+    opacity: 0.5;
+    font-size: 40px;
+}
+
+.aboutsec {
+    font-size: 40px;
+    padding-top: 30px;
+}
+@media (max-width:1230px) {
+    .about{
+        background-image: url(./image/bgab.png);
+    }
+    .par{
+        font-size: 25px;
+    }
+}
+@media (max-width:520px) {
+    .about{
+        background-image: url(./image/bgab.png);
+    }
+    .par{
+        font-size: 18px;
+    }
+}
+@media (max-width: 375px) {
+    .about{
+        background-image: url(./image/bgab.png);
+    }
+    .par{
+        font-size: 16px;
+    }
+}
+@media (max-width: 400px) {
+    header {
+        padding: 10px 0;
+    }
+
+    .group-name,
+    nav a {
+        float: none;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a:hover {
+        background-color: #c2aeae;
+        color: black;
+        transition: background-color 0.8s ease, color 0.8s ease;
+
+    }
+}
+
+
+.mobile-menu-button {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .mobile-menu-button {
+        display: block; 
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background-color: rgba(2, 48, 71, 255);
+        color: white;
+        border: none;
+        padding: 10px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    nav {
+        display: none; position: fixed;
+        top: 60px; left: 0;
+        width: 100%;
+        background-color: rgba(2, 48, 71, 255);
+        text-align: center;
+    }
+
+    nav a {
+        display: block;
+        color: white;
+        padding: 15px;
+        text-decoration: none;
+    }
+
+    nav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    .mobile-menu-button.active + nav {
+        display: block;}
+}
+@media (max-width: 560px) {
+
+
+    header {
+        padding: 5px;
+    }
+
+    .group-name,
+    nav a {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .welcome {
+        font-size: 40px;
+    }
+
+    .containerhome {
+        font-size: 20px;
+    }
+
+    .container img {
+        height: 100px;
+    }
+
+    .info,
+    .actinfo,
+    .activity-container {
+        font-size: 16px;
+    }
+
+    .activity-name {
+        font-weight: normal;
+    }
+
+    .mobile-menu-button {
+        top: 5px;
+        left: 5px;
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    nav a {
+        padding: 10px;
+    }
+
+    .mobile-menu-button.active + nav {
+        top: 50px; /* Adjust as needed */
+    }
+}
+.memsec{
+    font-size: 40px;
+    padding-top: 30px;
+}
