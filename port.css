@@ -221,11 +221,11 @@ width: 100%;
     border: 1px solid rgb(138, 131, 131);
     font-family: cursive;
     opacity: 0.5;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .aboutsec {
-    font-size: 40px;
+    font-size: 30px;
     padding-top: 30px;
 }
 @media (max-width:1230px) {
@@ -233,7 +233,7 @@ width: 100%;
         background-image: url(./image/bgab.png);
     }
     .par{
-        font-size: 25px;
+        font-size: 20px;
     }
 }
 @media (max-width:520px) {
@@ -241,7 +241,7 @@ width: 100%;
         background-image: url(./image/bgab.png);
     }
     .par{
-        font-size: 18px;
+        font-size: 13px;
     }
 }
 @media (max-width: 375px) {
@@ -249,7 +249,7 @@ width: 100%;
         background-image: url(./image/bgab.png);
     }
     .par{
-        font-size: 16px;
+        font-size: 11px;
     }
 }
 @media (max-width: 400px) {
