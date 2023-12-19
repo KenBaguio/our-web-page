@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" id="style" href="style.css">
+    <title>Draggable Calculator</title>
+</head>
+<body>
+
+<div class="calculator" id="calculator">
+    <div class="header" id="header">
+        <span class="name">Draggable Calculator</span>
+        <span class="drag" id="drag" draggable="true" ondragstart="dragStart(event)">☰</span>
+    </div>
+    <div class="display" id="display"></div>
+    <div class="buttons">
+        <button onclick="clearDisplay()">C</button>
+        <button onclick="deleteLastCharacter()">DE</button>
+        <button onclick="appendToDisplay('.')">.</button>
+        <button onclick="appendToDisplay('*')">X</button>
+        <button onclick="appendToDisplay('9')">9</button>
+        <button onclick="appendToDisplay('8')">8</button>
+        <button onclick="appendToDisplay('7')">7</button>
+        <button onclick="appendToDisplay('-')">-</button>
+        <button onclick="appendToDisplay('6')">6</button>
+        <button onclick="appendToDisplay('5')">5</button>
+        <button onclick="appendToDisplay('4')">4</button>
+        <button onclick="appendToDisplay('/')">/</button>
+        <button onclick="appendToDisplay('3')">3</button>
+        <button onclick="appendToDisplay('2')">2</button>
+        <button onclick="appendToDisplay('1')">1</button>
+        <button onclick="appendToDisplay('+')">+</button>
+        <button onclick="appendToDisplay('000')">000</button>
+        <button onclick="appendToDisplay('00')">00</button>
+        <button onclick="appendToDisplay('0')">0</button>
+        <button onclick="calculateResult()">=</button>
+    </div>
+</div>
+    <div class="dark-mode-toggle">
+    <input type="checkbox" id="darkModeToggle" class="toggle-checkbox" onchange="toggleDarkMode()">
+    <label for="darkModeToggle" class="toggle-label"></label>
+    <span class="toggle-text">Dark mode</span>
+                
+    </div>
+
+<script src="script.js"></script>
+
+</body>
